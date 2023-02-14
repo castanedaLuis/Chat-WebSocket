@@ -5,7 +5,13 @@ module.exports = httpServer => {
 
     io.on("connection", socket => {
 
-        console.log(socket.id);
+        //escuchamos el evento message que emiten y emitimos un evento para todos
+        socket.on('message',(message) =>{
+            io.emit('messageAll', {
+                user:'Luis', 
+                message
+            })
+        });
 
     });
 
