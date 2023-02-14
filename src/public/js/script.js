@@ -4,8 +4,12 @@ const send = document.querySelector('#send-message');
 const allMessages = document.querySelector('#all-messages')
 
 send.addEventListener('click', () => {
-    const message = document.querySelector('#message').value;
-    socket.emit('message', message);
+    const message = document.querySelector('#message');
+
+    socket.emit('message', message.value);
+
+    message.value = '';
+
 });
 
 
