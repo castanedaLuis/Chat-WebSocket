@@ -5,14 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "Jose Luis Castañeda",
   "license": "ISC",
   "dependencies": {
-    "-": "^0.0.1",
-    "D": "^1.0.0",
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
     "nodemon": "^2.0.20",
     "socket.io": "^4.6.0"
